@@ -1,0 +1,6 @@
+/* Global resets and base styles are in index.css */
+/* App-level styles */
+
+.app {
+  min-height: 100vh;
+}

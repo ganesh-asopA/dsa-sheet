@@ -1,0 +1,83 @@
+.page { padding: 2rem 1.5rem; }
+.inner { max-width: 1100px; margin: 0 auto; }
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-radius: 12px;
+  margin: 2rem 1.5rem;
+}
+
+.welcome { margin-bottom: 1.75rem; }
+.welcome h2 { font-size: 22px; font-weight: 700; color: #111827; }
+.welcome p { font-size: 14px; color: #6b7280; margin-top: 4px; }
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.statCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.statCard:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.statNum { font-size: 32px; font-weight: 700; line-height: 1; margin-bottom: 6px; }
+.statLabel { font-size: 13px; color: #374151; font-weight: 500; }
+.statOf { color: #9ca3af; font-weight: 400; }
+
+.progressCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 10px;
+}
+.progressNums { color: #6b7280; font-weight: 400; }
+.progressTrack { height: 10px; background: #e5e7eb; border-radius: 99px; overflow: hidden; margin-bottom: 8px; }
+.progressFill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 99px; transition: width 0.5s ease; }
+.progressPct { font-size: 12px; color: #6b7280; text-align: right; }
+
+.sectionTitle { font-size: 14px; font-weight: 600; color: #374151; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+.topicsGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.topicCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-decoration: none;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  display: block;
+}
+.topicCard:hover { box-shadow: 0 4px 12px rgba(102,126,234,0.12); border-color: #c7d2fe; }
+.topicName { font-size: 14px; font-weight: 600; color: #111827; margin-bottom: 4px; }
+.topicSub { font-size: 12px; color: #6b7280; margin-bottom: 10px; }
+.topicBar { height: 5px; background: #e5e7eb; border-radius: 99px; overflow: hidden; margin-bottom: 5px; }
+.topicFill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 99px; }
+.topicPct { font-size: 11px; color: #9ca3af; text-align: right; }
+
+@media (max-width: 768px) {
+  .statsRow { grid-template-columns: repeat(2, 1fr); }
+  .topicsGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .statsRow { grid-template-columns: 1fr 1fr; }
+  .topicsGrid { grid-template-columns: 1fr; }
+}
